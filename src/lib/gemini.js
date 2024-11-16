@@ -10,7 +10,7 @@ import {
 
 // gemini-1.0-pro
 const MODEL_NAME = process.env.NEXT_PUBLIC_MODEL_NAME;
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const API_KEY = process.env.NEXT_API_KEY;
 
 async function runChat(prompt) {
   console.log(`PROMPT`, prompt);
