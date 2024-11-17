@@ -1,6 +1,6 @@
 // node --version # Should be >= 18
 // npm install @google/generative-ai
-
+'use server'
 import {
   GoogleGenerativeAI,
   HarmCategory,
@@ -10,7 +10,9 @@ import {
 
 // gemini-1.0-pro
 const MODEL_NAME = process.env.NEXT_PUBLIC_MODEL_NAME;
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const API_KEY = process.env.NEXT_API;
+
+console.log(`API_KEY`, API_KEY);
 
 async function runChat(prompt) {
   console.log(`PROMPT`, prompt);
